@@ -4,12 +4,14 @@ import java.nio.channels.AcceptPendingException;
 
 public class LAB3 {
     public static void main(String[] args) {
+
         try {
             System.out.println("statement1");
-            throw new ArithmeticException();
+            System.out.println(1/0);
+            System.out.println("statement3");
 
         }
-        catch (AcceptPendingException e){
+        catch (ArithmeticException e){
 
         }
         finally {
